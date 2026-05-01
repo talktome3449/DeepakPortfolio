@@ -1,0 +1,80 @@
+<div class="card">
+
+  <h2 class="mb-5">Skills</h2>
+
+  <div class="row g-4">
+
+    @for (group of skills; track group.category) {
+
+      <div class="col-md-6 col-lg-4 reveal" appReveal>
+
+        <div class="skill-card p-4">
+
+          <h5 class="mb-3">{{group.category}}</h5>
+
+          @for (skill of group.items; track skill.name) {
+
+            <div class="mb-3">
+
+              <div class="d-flex justify-content-between">
+                <span>{{skill.name}}</span>
+                <span>{{skill.level}}%</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar"
+                     [style.width.%]="skill.level">
+                </div>
+              </div>
+
+            </div>
+
+          }
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+
+  <!-- @for (group of skills; track group.category) {
+
+    <h4 class="mb-3">{{group.category}}</h4>
+
+    <div class="row g-4 mb-4">
+
+      @for (skill of group.items; track skill.name) {
+
+        <div class="col-6 col-md-4 col-lg-3 text-center reveal" appReveal>
+
+          <div class="skill-circle">
+
+            <svg viewBox="0 0 100 100">
+              <circle cx="50" cy="50" r="45" class="bg"></circle>
+              <circle cx="50" cy="50" r="45"
+                      class="progress"
+                      [style.strokeDashoffset]="283 - (283 * skill.level / 100)">
+              </circle>
+            </svg>
+
+            <div class="inside">
+              <i [class]="skill.icon"></i>
+              <span>{{skill.level}}%</span>
+            </div>
+
+          </div>
+
+          <p class="mt-2">{{skill.name}}</p>
+
+        </div>
+
+      }
+
+    </div>
+
+  } -->
+
+</div>

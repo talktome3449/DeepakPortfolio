@@ -1,1 +1,150 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+
+@import "bootstrap/scss/bootstrap";   // Bootstrap SCSS (customizable)
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root,
+[data-bs-theme=dark] {
+--bs-body-bg: #0f172a;
+--bs-body-color: #e5e7eb;
+--bs-body-bg-2: #dee2e6;
+--bs-body-color-2: #212529;
+--bs-text-color: #FFC107;
+--bs-text-color-2:#212529;
+--bs-card-bg: #0f172a;
+--bs-card-color: #FFC107;
+--bs-border-color: #dee2e6;
+--bs-button-bg: #FF7F50;
+--bs-button-color: #212529;
+--bs-badge-bg: #FFC107;
+--bs-badge-color: #212529;
+--bs-matric-bg: #dee2e6;
+--bs-matric-color:
+--bs-icon-bg:
+--bs-icon-color: #FFC107;
+--bs-shadow: #FFC107;
+}
+[data-bs-theme=light] {
+--bs-body-bg: #e5e7eb;
+--bs-body-color: #0f172a;
+--bs-body-bg-2: #212529;
+--bs-body-color-2: #FFC107;
+--bs-text-color: #212529;
+--bs-text-color-2:#e5e7eb;
+--bs-card-bg: #e5e7eb;
+--bs-card-color: #FFC107;
+--bs-border-color: #212529;
+--bs-button-bg: #212529;
+--bs-button-color: #dee2e6;
+--bs-badge-bg: #212529;
+--bs-badge-color: #FFC107;
+--bs-matric-bg: #212529;
+--bs-matric-color:
+--bs-icon-bg:
+--bs-icon-color: #212529;
+--bs-shadow: #212529;
+}
+/* 
+:root,
+[data-bs-theme=dark] {
+  --bs-body-color: #e5e7eb;
+  --bs-body-bg: #0f172a;
+  --bs-body-bg-2: #dee2e6;
+  --bs-border-color: #dee2e6;
+  --bs-text-color: #FFC107;
+  --bs-text-color-2: #212529;
+  --bs-button-bg: #FF7F50;
+  --bs-button-text: #212529;
+  --bs-box-shadow-color: #FFC107;
+}
+
+[data-bs-theme=light] {
+  --bs-body-color: #111827;
+  --bs-body-bg: #f9fafb;
+  --bs-body-bg-2: #212529;
+  --bs-border-color: #212529;
+  --bs-text-color: #212529;
+  --bs-text-color-2: #FFC107;
+  --bs-button-bg: #212529;
+  --bs-button-text: #dee2e6;
+  --bs-box-shadow-color: #212529;
+}
+ */
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+.card {
+  display: flex;
+  background-color: var(--bs-body-bg);
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+/* .card-header {
+  color: var(--bs-card-color);
+  font-size: 2rem;
+  border-bottom: 3px solid var(--bs-border-color);;
+} */
+
+.img-fluid {
+  max-width: 70%;
+  height: auto;
+}
+
+/* METRICS */
+.metrics {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.metric-card {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: color-mix(in srgb, var(--bs-matric-bg) 8%, transparent);
+}
+
+.metric-card i {
+  font-size: 1.2rem;
+  color: var(--bs-icon-color)
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bagesTag {
+  color: var(--bs-badge-color);
+  background-color: color-mix(in srgb, var(--bs-badge-bg), transparent);
+}

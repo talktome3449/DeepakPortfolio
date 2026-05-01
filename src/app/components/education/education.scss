@@ -1,0 +1,52 @@
+.education-timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 2px;
+  border-left: 2px solid var(--bs-border-color);
+}
+
+.edu-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.edu-dot {
+  position: absolute;
+  left: -10px;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  background: var(--bs-text-color);
+  border-radius: 50%;
+}
+
+.edu-card {
+  margin-left: 1rem;
+  border-radius: 12px;
+  transition: 0.3s;
+  background-color: color-mix(in srgb, var(--bs-body-bg-2) 5%, transparent);
+}
+
+.edu-head {
+  // padding: 1rem;
+  //background-color: color-mix(in srgb, var(--bs-body-bg-2) 5%, transparent);
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+}
+
+/* LOGO */
+.edu-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .edu-logo {
+    width: 35px;
+    height: 35px;
+  }
+}

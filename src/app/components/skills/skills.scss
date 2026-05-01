@@ -1,0 +1,60 @@
+.skill-card {
+  border-radius: 16px;
+  background-color: color-mix(in srgb, var(--bs-body-bg-2) 5%, transparent);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+.progress {
+  height: 8px;
+  background-color: color-mix(in srgb, var(--bs-body-bg-2) 30%, transparent);
+}
+
+.progress-bar {
+  transition: width 1s ease;
+  background-color: color-mix(in srgb, #FFC107 60%, transparent);
+}
+
+/* .skill-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+svg {
+  width: 100%;
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 8;
+}
+
+.bg {
+  stroke: rgba(255,255,255,0.1);
+}
+
+.progress {
+  stroke: var(--bs-warning);
+  stroke-dasharray: 283;
+  transition: stroke-dashoffset 1s ease;
+}
+
+.inside {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inside i {
+  font-size: 1.2rem;
+} */

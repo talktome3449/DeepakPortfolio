@@ -1,0 +1,140 @@
+{
+    "experience": [
+        {
+            "id": 1,
+            "companyName": "DXC Technology",
+            "position": "Senior Analyst",
+            "place": "Gurgaon, IN",
+            "startMonth": "Oct",
+            "startYear": "2022",
+            "endMonth": "",
+            "endYear": "Present",
+            "responsbilities": [
+                {
+                    "id": 1,
+                    "role": "Experienced in the airline and visa domains."
+                },
+                {
+                    "id": 2,
+                    "role": "Built structured, reliable, high-performance code, and alongside managing code migration efforts."
+                },
+                {
+                    "id": 3,
+                    "role": "Troubleshoot application problems to maintain smooth functionality."
+                },
+                {
+                    "id": 4,
+                    "role": "Incorporated third-party libraries, services, and RESTful APIs to improve application capabilities."
+                },
+                {
+                    "id": 5,
+                    "role": "Partnered with cross-functional teams to handle analysis, design, and integration efforts."
+                },
+                {
+                    "id": 6,
+                    "role": "Maintained code alignment with best practices and company standards, and worked on modern authorization mechanisms such as JSON Web Token ( JWT )."
+                },
+                {
+                    "id": 7,
+                    "role": "Created application specifications while following program guidelines and technical expectations."
+                },
+                {
+                    "id": 8,
+                    "role": "Took an active role in Agile development processes, including sprint planning, daily stand-ups, and code reviews."
+                },
+                {
+                    "id": 9,
+                    "role": "Ensured features were delivered on time with high quality."
+                },
+                {
+                    "id": 10,
+                    "role": "Designed a POC in React, leveraging Tailwind to craft the user interface."
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "companyName": "Mobile Programming India Pvt. Ltd.",
+            "position": "Senior Developer",
+            "place": "Gurgaon, IN",
+            "startMonth": "Apr",
+            "startYear": "2021",
+            "endMonth": "Oct",
+            "endYear": "2022",
+            "responsbilities": [
+                {
+                    "id": 1,
+                    "role": "Created organized, reliable, and high-performing code."
+                },
+                {
+                    "id": 2,
+                    "role": "Developed application specifications, ensuring they met technical standards and project deadlines."
+                },
+                {
+                    "id": 3,
+                    "role": "Collaborated with team members to tackle outstanding tasks and adapt to project updates."
+                },
+                {
+                    "id": 4,
+                    "role": "Collected requirements, performed analysis, and supported system design while engaging with business users."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "companyName": "MBit Computraining India Pvt. Ltd.",
+            "position": "Senior Developer",
+            "place": "New Delhi, IN",
+            "startMonth": "Jul",
+            "startYear": "2018",
+            "endMonth": "Mar",
+            "endYear": "2021",
+            "responsbilities": [
+                {
+                    "id": 1,
+                    "role": "Experienced in the healthcare and manufacturing domains, where I crafted structured, maintainable, and effective code."
+                },
+                {
+                    "id": 2,
+                    "role": "Collaborated closely with web developers and backend engineers to ensure smooth functionality, integrate RESTful APIs, and confirm that designs met specifications and industry benchmarks."
+                },
+                {
+                    "id": 3,
+                    "role": "Teamed up with diverse functional groups to perform analysis, design, and integration tasks."
+                },
+                {
+                    "id": 4,
+                    "role": "Created application specifications while ensuring alignment with program standards and technical criteria."
+                },
+                {
+                    "id": 5,
+                    "role": "Performed code evaluations and reviews following established standards."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "companyName": "Atos Global India Pvt. Ltd.",
+            "position": "Software Engineer",
+            "place": "Pune, IN",
+            "startMonth": "Jun",
+            "startYear": "2015",
+            "endMonth": "Jun",
+            "endYear": "2018",
+            "responsbilities": [
+                {
+                    "id": 1,
+                    "role": "Experience in the retail and manufacturing domains, where I engineered robust, efficient, and well-tested code."
+                },
+                {
+                    "id": 2,
+                    "role": "Formulated application requirements and maintained compliance with technical guidelines."
+                },
+                {
+                    "id": 3,
+                    "role": "Engaged with business users to compile requirements, conduct analysis, and support system design efforts."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+<div class="card">
+  <h2 class="mb-4">Get In Touch</h2>
+  <p class="text-muted">
+          Open to opportunities & collaborations.
+        </p>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <div class="contact-left">
+        <p class="my_name"><em><strong>Deepak Agrawal</strong></em></p>
+        <p><strong>Location:</strong> Delhi, India</p>
+        <p><strong>Phone:</strong> +91-9130057478</p>
+        <p><strong>Email:</strong> agrawaldk1990@gmail.com</p>
+        <!-- <div class="qr-box mt-4">
+          <img src="../images/deepak_qr_resume.png" alt="QR Code">
+          <small>Scan to download resume</small>
+        </div> -->
+        <h6>Quick Actions</h6>
+        <div class="social-icons mt-4">
+          @for (s of socialLinks; track s.icon) {
+          <a [href]="s.url" target="_blank" [title]="s.label">
+            <i [class]="s.icon"></i>
+          </a>
+          }
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 text-center">
+      <div class="contact-right">
+        <div class="qr-box mt-4">
+          <img src="../images/deepak_qr_resume.png" alt="QR Code">
+        </div>
+        <small>Scan to download resume</small>
+      </div>
+    </div>
+  </div>
+</div>

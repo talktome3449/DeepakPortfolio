@@ -1,0 +1,25 @@
+<div class="card">
+  <h2 class="mb-4">Education</h2>
+  <div class="education-timeline">
+    @for (edu of educationList; track edu.degree) {
+    <div class="edu-item reveal" appReveal>
+      <div class="edu-dot"></div>
+      <div class="edu-card p-3">
+        <div class="d-flex align-items-center gap-3 mb-2 edu-head">
+          <img src="../images/{{ edu.logo }}" class="edu-logo" (click)="openLink($event, edu.website)" />
+          <div>
+            <h5>{{edu.degree}}</h5>
+            <p class="mb-1 text-muted">
+              {{edu.institute}}
+            </p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+              <span>{{edu.year}}</span>
+              <span>{{edu.score}}</span>
+            </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

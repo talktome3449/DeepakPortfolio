@@ -1,0 +1,221 @@
+/* Sidebar Layout */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-text-color);
+  scroll-behavior: smooth;
+}
+
+.sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+.sidebar-mobile {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 150px;
+  overflow-y: auto;  /* 🔥 important */
+  transition: left 0.3s ease-in-out;
+  z-index: 1050;
+}
+
+.sidebar-mobile.sidebar-open {
+  left: 0;         /* visible when open */
+}
+
+/* NAV ITEM */
+.nav-item {
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 1.2rem;
+  transition: 0.3s;
+  position: relative;
+  border-top: 1px solid var(--bs-button-color);
+}
+
+/* ICON */
+.nav-item i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.nav-item:hover {
+  background: var(--bs-body-color);
+}
+
+.nav-item:hover i {
+  color: var(--bs-text-color-2);
+  transform: scale(1.2);
+}
+
+.nav-item:hover .item-name {
+  color: var(--bs-text-color-2);
+}
+
+/* ACTIVE */
+.nav-item.active {
+  background: var(--bs-body-color);
+  color: var(--bs-text-color-2);
+}
+
+/* LEFT INDICATOR */
+.nav-item::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  width: 4px;
+  height: 0;
+  transition: 0.3s;
+}
+
+.nav-item.active::before {
+  height: 60%;
+  top: 20%;
+}
+
+/* Social Links Icon*/
+.social-icons {
+  border-top: 1px solid var(--bs-border-color);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.social-icons a {
+  padding: 0.2rem 0.5rem;
+  color: var(--bs-icon-color);
+  box-shadow: 0 0 15px color-mix(in srgb, var(--bs-shadow) 50%, transparent);
+}
+
+.social-icons a:hover {
+  color: #212529;
+  background: #FFC107;
+  border-radius: 1rem;
+}
+
+/* ------------- Profile Aveter Start ------------------- */
+.profile-wrapper {
+  text-align: center;
+  padding: 0.5rem;
+  /* background: url('https://t3.ftcdn.net/jpg/07/70/45/78/360_F_770457819_QLGrNfHyCpYK2UfqgjzdSClMSm89kGh7.jpg');
+  background-size: cover;
+  background-position: center; */
+}
+
+.profile-ring {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  background: var(--card);
+  border: 2px solid var(--border);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.profile-ring img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* HOVER EFFECT */
+.profile-ring:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.5);
+}
+
+/* INITIAL STATE */
+.reveal-profile {
+  opacity: 0;
+  transform: scale(0.8) rotate(-5deg);
+  transition: all 0.8s ease;
+}
+
+/* ON SCROLL */
+.reveal-profile.show {
+  opacity: 1;
+  transform: scale(1) rotate(0);
+}
+
+/* PROFILE RING ANIMATION */
+.profile-ring {
+  transition: 0.5s ease;
+}
+
+/* EXTRA GLOW ON REVEAL */
+.reveal-profile.show .profile-ring {
+  box-shadow: 0 0 15px color-mix(in srgb, var(--bs-shadow) 80%, transparent);
+}
+
+/* HOVER STILL WORKS */
+.profile-ring:hover {
+  transform: scale(1.05);
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.reveal-profile.show .profile-ring {
+  animation: float 3s ease-in-out infinite;
+}
+
+.reveal-profile h5 {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.5s;
+}
+
+.reveal-profile.show h5 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+/* ------------- Profile Aveter End ------------------- */
+
+@media (max-width: 768px) {
+  /* .nav-item {
+    padding: 0.1rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-item i {
+    font-size: 0.8rem;
+  } */
+
+  .profile-ring {
+    width: 70px;
+    height: 70px;
+  }
+  .reveal-profile h5 {
+    font-size: 0.9rem;
+  }
+
+  .social-icons { 
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .social-icons a {
+    padding: 0.1rem 0.25rem;
+  }
+
+}
